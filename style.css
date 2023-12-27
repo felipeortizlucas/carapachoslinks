@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background: url(./assets/portada.jpeg) no-repeat center center fixed;
+  background: url(./assets/findeano2023.jpeg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -35,7 +35,7 @@ header {
   align-items: center;
 }
 
-header>img {
+header > img {
   width: 12em;
   height: 12em;
   border-radius: 50%;
@@ -43,7 +43,7 @@ header>img {
   box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
 }
 
-header>h1 {
+header > h1 {
   display: inline-block;
   font-size: 1.8em;
   font-weight: bold;
@@ -62,7 +62,7 @@ ul {
   max-width: 480px;
 }
 
-ul>li {
+ul > li {
   background-color: #fffa;
   backdrop-filter: blur(10px) saturate(160%) contrast(180%);
   -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
@@ -72,7 +72,7 @@ ul>li {
   box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
 }
 
-ul>li>a {
+ul > li > a {
   display: flex;
   flex-direction: row;
   justify-content: center;
