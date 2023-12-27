@@ -1,82 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
-  <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      VANTA.BIRDS({
-        el: "#vanta",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: true,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        backgroundAlpha: 0.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        wingSpan: 40.0,
-        separation: 100.0,
-        alignment: 77.0,
-        cohesion: 5.0,
-        quantity: 1.0,
-        color1: 0xc7e1c7,
-        color2: 0x18c9f5,
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.BIRDS({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundAlpha: 0.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          wingSpan: 40.0,
+          separation: 100.0,
+          alignment: 77.0,
+          cohesion: 5.0,
+          quantity: 1.0,
+          color1: 0xc7e1c7,
+          color2: 0x18c9f5,
+        });
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          main.style.opacity = 1;
+          main.style.filter = " blur(0px)";
+        }, 1000);
       });
-      setTimeout(() => {
-        const main = document.querySelector("main");
-        main.style.opacity = 1;
-        main.style.filter = " blur(0px)";
-      }, 1000);
-    });
-  </script>
-  <title>Restaurante Carapachos</title>
-  <link rel="website icon" href="./assets/favicon.png" />
-</head>
+    </script>
+    <title>Restaurante Carapachos</title>
+    <link rel="website icon" href="./assets/favicon.png" />
+  </head>
 
-<body>
-  <div id="vanta"></div>
-  <main>
-    <header>
-      <img src="./assets/perfil.jpeg" alt="perfil" />
-      <h1>Restaurante Carapachos</h1>
-    </header>
-    <ul>
-      <li>
-        <a href="https://bit.ly/Menucarapachos">
-          <img src="./assets/menu.png" alt="menu" width="30px" /> Menú</a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/Rcarapachos"><img src="./assets/facebook.png" alt="facebook"
-            width="30px" />Facebook</a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/rcarapachos/">
-          <img src="./assets/instagram.png" alt="instragram" width="30px" />Instagram</a>
-      </li>
-      <li>
-        <a href="https://bit.ly/carapachosWhatsapp">
-          <img src="./assets/whatsapp.png" alt="whatsapp" width="30px" />WhatsApp</a>
-      </li>
+  <body>
+    <div id="vanta"></div>
+    <main>
+      <header>
+        <img src="./assets/perfil.jpeg" alt="perfil" />
+        <h1>Restaurante Carapachos</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://bit.ly/Menucarapachos">
+            <img src="./assets/menu.png" alt="menu" width="30px" /> Menú 2023</a
+          >
+        </li>
+        <li>
+          <a href="https://bit.ly/Menucarapachos">
+            <img src="./assets/menu.png" alt="menu" width="30px" /> Menú</a
+          >
+        </li>
+        <li>
+          <a href="https://www.facebook.com/Rcarapachos"
+            ><img
+              src="./assets/facebook.png"
+              alt="facebook"
+              width="30px"
+            />Facebook</a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/rcarapachos/">
+            <img
+              src="./assets/instagram.png"
+              alt="instragram"
+              width="30px"
+            />Instagram</a
+          >
+        </li>
+        <li>
+          <a href="https://bit.ly/carapachosWhatsapp">
+            <img
+              src="./assets/whatsapp.png"
+              alt="whatsapp"
+              width="30px"
+            />WhatsApp</a
+          >
+        </li>
 
-      <li>
-        <a
-          href="https://www.google.com/maps/place/Restaurante+Carapachos/@1.8147697,-78.764069,18z/data=!4m5!3m4!1s0x0:0xe66ccd995f96e39d!8m2!3d1.8147617!4d-78.7643479?authuser=4">
-          <img src="./assets/maps.png" alt="mapa" width="30px" />Como
-          llegar</a>
-      </li>
-    </ul>
-  </main>
-</body>
-
+        <li>
+          <a
+            href="https://www.google.com/maps/place/Restaurante+Carapachos/@1.8147697,-78.764069,18z/data=!4m5!3m4!1s0x0:0xe66ccd995f96e39d!8m2!3d1.8147617!4d-78.7643479?authuser=4"
+          >
+            <img src="./assets/maps.png" alt="mapa" width="30px" />Como
+            llegar</a
+          >
+        </li>
+      </ul>
+    </main>
+  </body>
 </html>
